@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:orientation="vertical"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="260dp"
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF">
+
+		<TextView
+			android:layout_height="34dp"
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:id="@+id/dialog_title"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textSize="14sp"/>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#D4D4D4"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"/>
+
+		<RadioGroup
+			android:layout_height="28dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/dialog_radiogroup"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp">
+
+			<RadioButton
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"
+				android:button="@null"
+				android:text="推荐"
+				android:textSize="13sp"
+				android:drawableBottom="@drawable/dialog_lab"
+				android:gravity="center"
+				android:id="@+id/dialog_r1"/>
+
+			<RadioButton
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"
+				android:button="@null"
+				android:text="类型"
+				android:textSize="13sp"
+				android:drawableBottom="@drawable/dialog_lab"
+				android:gravity="center"
+				android:id="@+id/dialog_r2"/>
+
+			<RadioButton
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"
+				android:button="@null"
+				android:text="应用"
+				android:textSize="13sp"
+				android:drawableBottom="@drawable/dialog_lab"
+				android:gravity="center"
+				android:id="@+id/dialog_r3"/>
+
+		</RadioGroup>
+
+		<android.support.v4.view.ViewPager
+			android:id="@+id/dialog_pager"
+			android:layout_height="280dp"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:background="#EEEEEE"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<CheckBox
+				android:layout_height="28dp"
+				android:layout_width="match_parent"
+				android:text="始终用此程序打开"
+				android:textSize="13sp"
+				android:textColor="#5B5B5B"
+				android:background="#EEEEEE"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
